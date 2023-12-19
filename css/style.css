@@ -1,0 +1,82 @@
+*{margin: 0}
+section{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.hbodies{
+    display: inline-block;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+#banner{
+    background: rgba(0,0,0,1);
+}
+#wet{
+    background: url(../media/wet.gif);
+    width: 100px;
+    height: 100px;
+    transform: translate(20vw, -8vw);
+}
+#dry{
+    background: url(../media/dry.gif);
+    width: 120px;
+    height: 120px;
+    animation: drymotion 60s infinite;
+}
+#islands{
+    background: url(../media/islands.gif);
+    width: 100px;
+    height: 100px;
+    animation: imotion 50s infinite;
+}
+
+#gg1{
+    background: url(../media/gg1.gif);
+    width: 160px;
+    height: 160px;
+    animation: gmotion 60s infinite;
+}
+#bhole{
+    background: url(../media/bhole.gif);
+    width: 400px;
+    height: 400px;
+    animation: bmotion 60s infinite;
+}
+@keyframes drymotion{
+    0%{transform: translate(0vw, 0vh);}
+    20%{transform: translate(40vw, 65vh);}
+    40%{transform: translate(50vw, 55vh)}
+    60%{transform: translate(10vw, 54vh);}
+    80%{transform: translate(90vw, 42vh);}
+    100%{transform: translate(55vw, 55vh);}
+}
+@keyframes bmotion{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes gmotion{
+    0%{transform: scale(0.5);}
+    25%{transform: scale(1);}
+    50%{transform: scale(1.5);}
+    75%{transform: scale(1);}
+    100%{transform: scale(0.5);}
+}
+@keyframes imotion{
+    0%{transform: translate(15vw, 20vh) scale(0.2);}
+    20%{transform: translate(10vw, 42vh) scale(0.6);}
+    40%{transform: translate(20vw, 33vh) scale(0.8);}
+    60%{transform: translate(32vw, 15vh) scale(1);}
+    80%{transform: translate(44vw, 32vh) scale(0.8);}
+    100%{transform: translate(22vw, 21vh) scale(0.6);}
+}
+
